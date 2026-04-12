@@ -99,6 +99,58 @@
             border-bottom-color: #2C5F2D;
         }
 
+        /* Stages Slide */
+        .stages-slide h2 {
+            font-size: 2.5rem;
+            color: #2C5F2D;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .stages-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            max-width: 1200px;
+        }
+
+        .stage-box {
+            position: relative;
+            background: #B8D4B8;
+            color: #2C5F2D;
+            padding: 20px 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            min-width: 180px;
+            text-align: center;
+            clip-path: polygon(0 0, 20px 50%, 0 100%, calc(100% - 20px) 100%, 100% 50%, calc(100% - 20px) 0);
+            transition: all 0.3s;
+        }
+
+        .stage-box.target {
+            background: #8FB88F;
+            color: #1A3F1B;
+            border: 2px solid #000000;
+            padding: 22px 32px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .stage-box.target::after {
+            content: 'Target Stage';
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: #1A3F1B;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+
         /* Navigation */
         .nav-indicator {
             position: fixed;
@@ -152,12 +204,25 @@
                 Source: <a href="https://www.anthropic.com/research/labor-market-impacts" target="_blank">Anthropic - Labor Market Impacts Research</a>
             </div>
         </div>
+
+        <!-- Slide 3: Adoption Stages -->
+        <div class="slide stages-slide">
+            <h2>Adoption Stages in Dev</h2>
+            <div class="stages-container">
+                <div class="stage-box">Auto Complete</div>
+                <div class="stage-box">Chat</div>
+                <div class="stage-box target">Agent Driven</div>
+                <div class="stage-box">Agent Orchestration</div>
+                <div class="stage-box">Fully Automatic</div>
+            </div>
+        </div>
     </div>
 
     <!-- Navigation Indicators -->
     <div class="nav-indicator">
         <div class="nav-dot active" data-slide="0"></div>
         <div class="nav-dot" data-slide="1"></div>
+        <div class="nav-dot" data-slide="2"></div>
     </div>
 
     <div class="nav-hint">Use arrow keys or click dots to navigate</div>
