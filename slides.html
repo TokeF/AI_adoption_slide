@@ -107,6 +107,49 @@
             text-align: center;
         }
 
+        /* Objective Slide */
+        .objective-slide h2 {
+            font-size: 2.5rem;
+            color: #2C5F2D;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .objective-slide .subtitle {
+            font-size: 1.3rem;
+            color: #E8A0A0;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+
+        .objective-slide .content {
+            max-width: 900px;
+            text-align: left;
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #333;
+        }
+
+        .objective-slide .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .objective-slide .content li {
+            margin-bottom: 25px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .objective-slide .content li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #2C5F2D;
+            font-size: 1.5rem;
+        }
+
         .stages-container {
             display: flex;
             align-items: center;
@@ -205,7 +248,21 @@
             </div>
         </div>
 
-        <!-- Slide 3: Adoption Stages -->
+        <!-- Slide 3: Objective -->
+        <div class="slide objective-slide">
+            <h2>Objective</h2>
+            <div class="subtitle">2-Month Proof of Concept</div>
+            <div class="content">
+                <ul>
+                    <li>Evaluate agent-driven AI tooling and use cases</li>
+                    <li>Develop team proficiency with AI-assisted workflows</li>
+                    <li>Prioritize engineering decisions over manual coding</li>
+                    <li>Assess productivity impact and adoption opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4: Adoption Stages -->
         <div class="slide stages-slide">
             <h2>Adoption Stages in Dev</h2>
             <div class="stages-container">
@@ -223,6 +280,7 @@
         <div class="nav-dot active" data-slide="0"></div>
         <div class="nav-dot" data-slide="1"></div>
         <div class="nav-dot" data-slide="2"></div>
+        <div class="nav-dot" data-slide="3"></div>
     </div>
 
     <div class="nav-hint">Use arrow keys or click dots to navigate</div>
