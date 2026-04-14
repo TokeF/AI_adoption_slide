@@ -1,0 +1,84 @@
+<h2>Framework Slide — Layout Options</h2>
+<p class="subtitle">Three ways to show top-down mandates vs. bottom-up discovery</p>
+
+<div class="cards">
+
+  <!-- Option A: Two columns -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="display:flex;gap:16px;padding:16px;background:#E8DCC4;border-radius:6px;min-height:160px">
+        <div style="flex:1;background:#B8D4B8;border-radius:4px;padding:12px">
+          <div style="font-size:0.65rem;font-weight:700;color:#2C5F2D;text-transform:uppercase;margin-bottom:8px">▼ Top-Down</div>
+          <div style="font-size:0.7rem;background:white;border-radius:3px;padding:5px 8px;margin-bottom:5px">Claude Code</div>
+          <div style="font-size:0.7rem;background:white;border-radius:3px;padding:5px 8px;margin-bottom:5px">Agentic</div>
+          <div style="font-size:0.7rem;background:white;border-radius:3px;padding:5px 8px">Human in the loop</div>
+        </div>
+        <div style="flex:1;background:#E8A0A080;border-radius:4px;padding:12px">
+          <div style="font-size:0.65rem;font-weight:700;color:#8B4444;text-transform:uppercase;margin-bottom:8px">▲ Bottom-Up</div>
+          <div style="font-size:0.7rem;background:white;border-radius:3px;padding:5px 8px;margin-bottom:5px">Use cases</div>
+          <div style="font-size:0.7rem;background:white;border-radius:3px;padding:5px 8px">Tools</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Two Columns</h3>
+      <p>Side-by-side. Simple and clean. Doesn't visually reinforce direction — the two streams look parallel/equal.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Vertical top/bottom -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="display:flex;flex-direction:column;gap:10px;padding:16px;background:#E8DCC4;border-radius:6px;min-height:160px">
+        <div style="background:#B8D4B8;border-radius:4px;padding:10px">
+          <div style="font-size:0.65rem;font-weight:700;color:#2C5F2D;text-transform:uppercase;margin-bottom:6px">▼ Top-Down (Leadership)</div>
+          <div style="display:flex;gap:6px">
+            <div style="font-size:0.65rem;background:white;border-radius:3px;padding:4px 7px">Claude Code</div>
+            <div style="font-size:0.65rem;background:white;border-radius:3px;padding:4px 7px">Agentic</div>
+            <div style="font-size:0.65rem;background:white;border-radius:3px;padding:4px 7px">Human in the loop</div>
+          </div>
+        </div>
+        <div style="text-align:center;font-size:0.8rem;color:#666">↕</div>
+        <div style="background:#E8A0A080;border-radius:4px;padding:10px">
+          <div style="font-size:0.65rem;font-weight:700;color:#8B4444;text-transform:uppercase;margin-bottom:6px">▲ Bottom-Up (Team)</div>
+          <div style="display:flex;gap:6px">
+            <div style="font-size:0.65rem;background:white;border-radius:3px;padding:4px 7px">Use cases</div>
+            <div style="font-size:0.65rem;background:white;border-radius:3px;padding:4px 7px">Tools</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Vertical Stacked</h3>
+      <p>Leadership on top, team on bottom. The layout literally maps to the name. Most intuitive reading.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Container/guardrails -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="padding:16px;background:#E8DCC4;border-radius:6px;min-height:160px;position:relative">
+        <div style="border:2px solid #2C5F2D;border-radius:6px;padding:10px">
+          <div style="font-size:0.6rem;font-weight:700;color:#2C5F2D;text-transform:uppercase;margin-bottom:6px">▼ Top-Down guardrails</div>
+          <div style="display:flex;gap:5px;margin-bottom:12px">
+            <div style="font-size:0.6rem;background:#B8D4B8;border-radius:3px;padding:3px 6px">Claude Code</div>
+            <div style="font-size:0.6rem;background:#B8D4B8;border-radius:3px;padding:3px 6px">Agentic</div>
+            <div style="font-size:0.6rem;background:#B8D4B8;border-radius:3px;padding:3px 6px">Human in the loop</div>
+          </div>
+          <div style="border:1px dashed #8B4444;border-radius:4px;padding:8px">
+            <div style="font-size:0.6rem;font-weight:700;color:#8B4444;text-transform:uppercase;margin-bottom:5px">▲ Bottom-Up (within guardrails)</div>
+            <div style="display:flex;gap:5px">
+              <div style="font-size:0.6rem;background:#E8A0A080;border-radius:3px;padding:3px 6px">Use cases</div>
+              <div style="font-size:0.6rem;background:#E8A0A080;border-radius:3px;padding:3px 6px">Tools</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Container</h3>
+      <p>Top-down forms the guardrails; bottom-up happens inside them. Shows top-down as <em>enabling</em>, not just controlling. More nuanced but busier.</p>
+    </div>
+  </div>
+
+</div>

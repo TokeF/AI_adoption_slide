@@ -72,8 +72,8 @@
         }
 
         .figure-slide img {
-            max-width: 90%;
-            max-height: 60vh;
+            max-width: 100%;
+            max-height: 72vh;
             object-fit: contain;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -82,9 +82,11 @@
         }
 
         .figure-slide .reference {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0.9rem;
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            text-align: right;
+            font-size: 1rem;
             color: #666;
         }
 
@@ -99,14 +101,6 @@
             border-bottom-color: #2C5F2D;
         }
 
-        /* Stages Slide */
-        .stages-slide h2 {
-            font-size: 2.5rem;
-            color: #2C5F2D;
-            margin-bottom: 60px;
-            text-align: center;
-        }
-
         /* Objective Slide */
         .objective-slide h2 {
             font-size: 2.5rem;
@@ -116,7 +110,7 @@
         }
 
         .objective-slide .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.43rem;
             color: #E8A0A0;
             text-align: center;
             margin-bottom: 50px;
@@ -126,7 +120,7 @@
         .objective-slide .content {
             max-width: 900px;
             text-align: left;
-            font-size: 1.2rem;
+            font-size: 1.32rem;
             line-height: 2;
             color: #333;
         }
@@ -147,7 +141,15 @@
             position: absolute;
             left: 0;
             color: #2C5F2D;
-            font-size: 1.5rem;
+            font-size: 1.65rem;
+        }
+
+        .objective-slide .tagline {
+            margin-top: 30px;
+            font-size: 1.32rem;
+            font-style: italic;
+            color: #2C5F2D;
+            font-weight: 500;
         }
 
         .stages-container {
@@ -163,7 +165,7 @@
             background: #B8D4B8;
             color: #2C5F2D;
             padding: 20px 30px;
-            font-size: 1.1rem;
+            font-size: 1.21rem;
             font-weight: 500;
             min-width: 180px;
             text-align: center;
@@ -176,7 +178,7 @@
             color: #1A3F1B;
             border: 2px solid #000000;
             padding: 22px 32px;
-            font-size: 1.15rem;
+            font-size: 1.27rem;
             font-weight: 600;
             transform: scale(1.05);
             z-index: 2;
@@ -188,10 +190,97 @@
             bottom: -25px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 0.75rem;
+            font-size: 0.83rem;
             color: #1A3F1B;
             white-space: nowrap;
             font-weight: 600;
+        }
+
+        /* Framework Slide */
+        .framework-slide h2 {
+            font-size: 2.5rem;
+            color: #2C5F2D;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .framework-slide .framework-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 36px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .framework-slide .framework-columns {
+            display: flex;
+            gap: 0;
+            align-items: flex-start;
+        }
+
+        .framework-slide .framework-section {
+            padding: 0 50px;
+        }
+
+        .framework-slide .framework-section.bottom-up {
+            border-left: 1px solid #C8B89A;
+        }
+
+        .framework-slide .framework-section h3 {
+            font-size: 1.21rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .framework-slide .framework-section.top-down h3 {
+            color: #2C5F2D;
+        }
+
+        .framework-slide .framework-section.bottom-up h3 {
+            color: #c47a7a;
+        }
+
+        .framework-slide .framework-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .framework-slide .framework-section li {
+            font-size: 1.21rem;
+            color: #333;
+            padding: 5px 0 5px 28px;
+            position: relative;
+        }
+
+        .framework-slide .framework-section.top-down li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #2C5F2D;
+        }
+
+        .framework-slide .framework-section.bottom-up li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #c47a7a;
+        }
+
+        .framework-slide .stages-divider {
+            border: none;
+            border-top: 1px solid #C8B89A;
+            width: 100%;
+        }
+
+        .framework-slide .stages-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            align-self: flex-start;
         }
 
         /* Navigation */
@@ -206,8 +295,8 @@
         }
 
         .nav-dot {
-            width: 12px;
-            height: 12px;
+            width: 13px;
+            height: 13px;
             border-radius: 50%;
             background: #D4C5A9;
             cursor: pointer;
@@ -225,7 +314,7 @@
             left: 50%;
             transform: translateX(-50%);
             color: #666;
-            font-size: 0.8rem;
+            font-size: 0.88rem;
             z-index: 100;
             opacity: 0.7;
         }
@@ -241,7 +330,7 @@
 
         <!-- Slide 2: Figure -->
         <div class="slide figure-slide">
-            <h2>Labor Market Impacts</h2>
+            <h2>The Opportunity</h2>
             <img src="ai_adoption.png" alt="Figure 2: Labor Market Impacts">
             <div class="reference">
                 Source: <a href="https://www.anthropic.com/research/labor-market-impacts" target="_blank">Anthropic - Labor Market Impacts Research</a>
@@ -256,21 +345,42 @@
                 <ul>
                     <li>Evaluate agent-driven AI tooling and use cases</li>
                     <li>Develop team proficiency with AI-assisted workflows</li>
-                    <li>Prioritize engineering decisions over manual coding</li>
                     <li>Assess productivity impact and adoption opportunities</li>
                 </ul>
             </div>
+            <div class="tagline">We architect, AI implements</div>
         </div>
 
-        <!-- Slide 4: Adoption Stages -->
-        <div class="slide stages-slide">
-            <h2>Adoption Stages in Dev</h2>
-            <div class="stages-container">
-                <div class="stage-box">Auto Complete</div>
-                <div class="stage-box">Chat</div>
-                <div class="stage-box target">Agent Driven</div>
-                <div class="stage-box">Agent Orchestration</div>
-                <div class="stage-box">Fully Automatic</div>
+        <!-- Slide 4: Framework + Adoption Stages -->
+        <div class="slide framework-slide">
+            <h2>Framework</h2>
+            <div class="framework-body">
+                <div class="framework-columns">
+                    <div class="framework-section top-down">
+                        <h3>Top-Down</h3>
+                        <ul>
+                            <li>Claude Code</li>
+                            <li>Agentic</li>
+                            <li>Human in the loop</li>
+                        </ul>
+                    </div>
+                    <div class="framework-section bottom-up">
+                        <h3>Bottom-Up</h3>
+                        <ul>
+                            <li>Use cases</li>
+                            <li>Tools</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="stages-divider">
+                <div class="stages-label">Adoption Stages in Dev</div>
+                <div class="stages-container">
+                    <div class="stage-box">Auto Complete</div>
+                    <div class="stage-box">Chat</div>
+                    <div class="stage-box target">Agent Driven</div>
+                    <div class="stage-box">Agent Orchestration</div>
+                    <div class="stage-box">Fully Automatic</div>
+                </div>
             </div>
         </div>
     </div>

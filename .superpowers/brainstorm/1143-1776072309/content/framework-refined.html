@@ -1,0 +1,60 @@
+<h2>Framework — Refined Layouts</h2>
+<p class="subtitle">Subtitles + bullets, container vs. stacked</p>
+
+<div class="cards">
+
+  <!-- Option B refined: stacked, subtitles + bullets -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="display:flex;flex-direction:column;gap:14px;padding:20px;background:#E8DCC4;border-radius:6px;min-height:180px">
+        <div>
+          <div style="font-size:0.75rem;font-weight:700;color:#2C5F2D;margin-bottom:8px">Top-Down</div>
+          <ul style="margin:0;padding-left:16px;font-size:0.68rem;color:#333;line-height:1.9">
+            <li>Claude Code</li>
+            <li>Agentic</li>
+            <li>Human in the loop</li>
+          </ul>
+        </div>
+        <div style="border-top:1px solid #ccc;padding-top:12px">
+          <div style="font-size:0.75rem;font-weight:700;color:#8B4444;margin-bottom:8px">Bottom-Up</div>
+          <ul style="margin:0;padding-left:16px;font-size:0.68rem;color:#333;line-height:1.9">
+            <li>Use cases</li>
+            <li>Tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Stacked</h3>
+      <p>Two sections separated by a divider. Clean, reads top to bottom.</p>
+    </div>
+  </div>
+
+  <!-- Option C refined: container, subtitles + bullets -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="padding:20px;background:#E8DCC4;border-radius:6px;min-height:180px">
+        <div style="border:2px solid #2C5F2D;border-radius:6px;padding:14px">
+          <div style="font-size:0.75rem;font-weight:700;color:#2C5F2D;margin-bottom:8px">Top-Down</div>
+          <ul style="margin:0 0 12px 0;padding-left:16px;font-size:0.68rem;color:#333;line-height:1.9">
+            <li>Claude Code</li>
+            <li>Agentic</li>
+            <li>Human in the loop</li>
+          </ul>
+          <div style="border:1.5px dashed #c47a7a;border-radius:4px;padding:12px">
+            <div style="font-size:0.75rem;font-weight:700;color:#8B4444;margin-bottom:8px">Bottom-Up</div>
+            <ul style="margin:0;padding-left:16px;font-size:0.68rem;color:#333;line-height:1.9">
+              <li>Use cases</li>
+              <li>Tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Container</h3>
+      <p>Bottom-up nested inside top-down. Shows the guardrails relationship.</p>
+    </div>
+  </div>
+
+</div>
